@@ -94,30 +94,117 @@
 				<p>The School of Mathematical Sciences at Kavayitri Bahinabai Chaudhari North Maharashtra University (KBCNMU) offers programs in Mathematics, Statistics, and Actuarial Science. These include undergraduate (B.Sc.) and postgraduate (M.Sc.) degrees, as well as Ph.D. programs. The school focuses on both theoretical foundations and practical applications, with specializations and research opportunities in areas like computational mathematics, industrial statistics, and actuarial science.  </p>
 				<blockquote class="blockquote-1">
 					<p>   </p>
-					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+					<small> कवयित्री बहिणाबाई चौधरी :<cite title="Source Title"> गाणं हे तसं काय असतं?
+                     मनातलं भाव, शब्दांच्या रूपात,
+                     ओठावर येतं, हृदयात रुजतं,
+                     जसं पाणी जमिनीत झिरपतं.
+</cite></small>
 				</blockquote>
 			</div>
 		</div>
 	</section>
 	
 	
-      <section class="container">
-      <div class="row">
-      	<div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Our Students</h2></div> 
-        <p><span>Students are encouraged for projects in the industrial/social/health/ financial sectors. The school regularly organizes activities for UG and PG students, college teachers and researchers.</span></p>
-        <p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
-        <a href="#" title="read more" class="btn-inline " target="_self">read more</a> </div>
-        
-        <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Courses</h2></div> 
-            <div class="list styled custom-list">
-            <ul>
-            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">M.Sc.(Mathematics) with specialization in Computational Mathematics</a></li>
-            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">M.Sc.(Statistics) with specialization in Industrial Statistics</a></li>
-            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">B.Sc.(Actuarial Science)</a></li>
-            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">M. Phil. And Ph.D. in Mathematics.</a></li>
-            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">M. Phil. And Ph.D. in Statistics.</a></li>
-            </ul>
-            </div>
+<section class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="title-box clearfix">
+        <h2 class="title-box_primary">Our Students</h2>
+      </div>
+      <p>
+        Students are encouraged for projects in the industrial, social, health, and financial sectors. The school regularly organizes activities for UG and PG students, college teachers, and researchers.
+      </p>
+
+      <p>
+        Our alumni have achieved great success in various fields.
+        <span id="moreText" style="display:none;">
+          Many of our alumni are currently working in prestigious academic and research institutions across India and abroad, contributing to the growth of knowledge through innovation and dedication.
+
+          Several graduates have successfully qualified for highly competitive government services such as the Indian Statistical Service (ISS) and District Statistical Officer (DSO), and others are actively working as research scientists, data analysts, and consultants in esteemed organizations.
+
+          Their success is a proud reflection of the academic rigor and professional nurturing received in our department.
+
+		  Others have taken on roles as research scientists, data analysts, and consultants, working with reputed organizations, industries, and think tanks. Their dedication continues to bring recognition to our department and serves as a beacon of inspiration for current and future students.
+
+          Their journeys stand as a testament to the strong foundation laid here—through committed teaching, rigorous training, and a nurturing environment that encourages critical thinking and professional growth.
+
+         We are proud to call them our own. Their success stories continue to motivate and guide our ongoing mission: to foster excellence in statistical education and create a generation of socially responsible, intellectually equipped leaders.
+
+
+        </span>
+      </p>
+
+      <a href="#" onclick="toggleReadMore(event)" class="btn-inline" id="readMoreBtn">Read more</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleReadMore(e) {
+    e.preventDefault();
+    const moreText = document.getElementById("moreText");
+    const btn = document.getElementById("readMoreBtn");
+
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      btn.innerText = "Read less";
+    } else {
+      moreText.style.display = "none";
+      btn.innerText = "Read more";
+    }
+  }
+</script>
+
+<div class="col-md-4">
+  <div class="title-box clearfix ">
+    <h2 class="title-box_primary">Courses</h2>
+  </div>
+  <div class="list styled custom-list">
+    <ul>
+      <li>
+        <a href="#" onclick="toggleDetails(event, 'mathComp')">M.Sc. (Mathematics) – Computational Mathematics</a>
+        <p id="mathComp" class="course-details" style="display: none;">
+          This postgraduate program focuses on advanced mathematics along with modern computational methods. It covers numerical methods, mathematical modeling, programming in scientific languages, and solving real-world problems using computers.
+        </p>
+      </li>
+      <li>
+        <a href="#" onclick="toggleDetails(event, 'statIndus')">M.Sc. (Statistics) – Industrial Statistics</a>
+        <p id="statIndus" class="course-details" style="display: none;">
+          This M.Sc. course is designed to equip students with advanced statistical techniques and tools used in industrial, business, and scientific research settings. Topics include design of experiments, multivariate analysis, quality control, and software like R and SPSS.
+        </p>
+      </li>
+      <li>
+        <a href="#" onclick="toggleDetails(event, 'actuarial')">B.Sc. (Actuarial Science)</a>
+        <p id="actuarial" class="course-details" style="display: none;">
+          This undergraduate program combines mathematics, statistics, and finance. It prepares students for careers in actuarial science, which involves risk assessment, life insurance, pension planning, and investment modeling using statistical and probabilistic tools.
+        </p>
+      </li>
+      <li>
+        <a href="#" onclick="toggleDetails(event, 'mphilMath')">M.Phil. and Ph.D. in Mathematics</a>
+        <p id="mphilMath" class="course-details" style="display: none;">
+          These research-level programs offer deep study and investigation in pure and applied mathematics. Topics include algebra, analysis, topology, number theory, and applications. Scholars work under supervision and submit a dissertation based on original research.
+        </p>
+      </li>
+      <li>
+        <a href="#" onclick="toggleDetails(event, 'mphilStats')">M.Phil. and Ph.D. in Statistics</a>
+        <p id="mphilStats" class="course-details" style="display: none;">
+          The M.Phil. and Ph.D. programs in statistics focus on theoretical development and applied research in areas such as statistical modeling, inference, sampling theory, bio-statistics, and data analysis using statistical software.
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- JavaScript to handle expand/collapse -->
+<script>
+  function toggleDetails(event, id) {
+    event.preventDefault();
+    const content = document.getElementById(id);
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+
          </div>
          <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Locations</h2></div> 
             <figure class="frame thumbnail alignnone clearfix">
